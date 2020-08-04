@@ -1,0 +1,162 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+Body
+{
+	background-color: #f1f3f4;
+	font-family: sans-serif;  
+}
+.top-nav-bar
+{
+	height: 57px;
+	top: 0;
+	position: sticky;
+	background: #fff;
+	margin-bottom: 20px;
+	border-bottom: 3px solid orange;
+	z-index: 2;
+}
+.navbar-expand-sm bg-dark navbar-dark
+{
+	height: 57px;
+	top: 0;
+	position: sticky;
+	background: #fff;
+	margin-bottom: 20px;
+	border-bottom: 3px solid orange;
+	z-index: 2;
+}
+.form-control
+{
+	margin-top: 9px; 
+	margin-left: 30px;
+	border: 1px solid orange ! important;
+	border-top-left-radius: 20px  !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius: 0  ! important;
+	border-bottom-right-radius: 0 ! important;
+	box-shadow: none ! important;
+}
+.input-group-text
+{
+	background: orange !important;
+	border: 1px solid orange !important;
+	margin: 8.5px 10px 3px 0 !important;
+	border-top-left-radius: 0px  !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 20  ! important;
+	border-bottom-right-radius: 20 ! important;
+	cursor: pointer;
+}
+.search-box
+{
+	display: inline-flex;
+	width: 60%;
+}
+.fa-search
+{
+	color: #fff;
+}
+.menu-bar
+{
+	width: 40%
+	height: 57px;
+	float: right;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	float: right;
+}
+.menu-bar ul li
+{
+	border-left: 1px solid #fff;
+	list-style-type: none;
+	padding: 15px 35px;
+	text-align: center;
+	background-color: orange;
+	cursor: pointer;
+}
+.menu-bar ul li a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#slider {
+	width: 70%;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('1.jpg');
+	background-color: orange;
+	background-size: 100% 100%
+	box-shadow: 1px 2px 10px 5px white;
+	float: left;
+	animation: slider 9s infinite linear;
+}
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+}
+#slider figure img {
+	width: 70%;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: orange;
+	background-size: 100% 100%
+	box-shadow: 1px 2px 10px 5px white;
+	float: left;
+	animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+	0%{background-image: url('2.jpg')}
+	20%{background-image: url('3.jpg')}
+	35%{background-image: url('4.jpg')}
+	45%{background-image: url('5.jpg')}
+	60%{background-image: url('6.jpg')}
+	75%{background-image: url('7.jpg')}
+	100%{background-image: url('8.jpg')}
+	
+}
+
+@media only screen and (max-width: 980px)
+{
+	.top-nav-bar
+	{
+		height: 118px;
+		border-bottom: 0;
+	}
+	.search-box
+	{
+		width: 100%;
+	}
+	.menu-bar
+	{
+		width: 100%
+	}
+	.menu-bar ul
+	{
+		margin: 10px 0;
+		width: 100%
+	}
+	.menu-bar ul li
+	{
+		height: 57px;
+		width: 100%;
+	}
+}
